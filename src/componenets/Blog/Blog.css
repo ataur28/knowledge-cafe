@@ -1,0 +1,34 @@
+.cover-image{
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+}
+
+.blog-author-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: c;
+}
+
+.author-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.author-image{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.author-name{
+    margin: 10px 0px;
+    padding: 0px;
+}
+
+.publishing-date{
+    margin: 0;
+}
