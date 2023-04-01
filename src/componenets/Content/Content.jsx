@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import toast, { Toaster } from 'react-hot-toast';
+// import toast, { Toaster } from 'react-hot-toast';
 import './Content.css'
 import { useState } from 'react';
 import Blog from '../Blog/Blog';

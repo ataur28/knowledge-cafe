@@ -5,7 +5,7 @@ import './App.css'
 import Header from './componenets/Header/Header'
 import Content from './componenets/Content/Content'
 import BlogQuestionAnswer from './componenets/BlogQuestionAnswer/BlogQuestionAnswer'
-import Toast from './componenets/Toast/Toast'
+
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <Header></Header>
       <Content></Content>
       <BlogQuestionAnswer></BlogQuestionAnswer>
-      <Toast></Toast>
+
     </div>
   )
 }
