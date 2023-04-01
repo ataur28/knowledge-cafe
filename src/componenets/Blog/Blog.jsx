@@ -4,9 +4,15 @@ import { faBookmark, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import './Blog.css'
 
 const Blog = (props) => {
-    // console.log(props.blog);
+    // console.log(props);
     const { authorName, authorPicture, blogTitle, coverPicture, publishDate, readTime, topic
     } = props.blog;
+    const handleAddBlogs = props.handleAddBlogs;
+    const handleAddBlogsTime = props.handleAddBlogsTime;
+
+    // const handleAddBlogsTime = (blog) => {
+    //     console.log(blog)
+    // }
 
     return (
         <div className='blog-container'>
@@ -20,13 +26,13 @@ const Blog = (props) => {
                     </div>
                 </div>
                 <div className='read-time'>
-                    <p>{readTime} min read <button><FontAwesomeIcon icon={faBookmark} /></button></p>
+                    <p>{readTime} min read <button onClick={() => handleAddBlogs(props.blog)}><FontAwesomeIcon icon={faBookmark} /></button></p>
 
                 </div>
             </div>
             <h2 className='blog-title'>{blogTitle}</h2>
             <p className="blog-topic-tag">{topic}</p>
-            <button className='mark-as-read'><u>Mark as read</u></button>
+            <button onClick={() => handleAddBlogsTime(props.blog)} className='mark-as-read'><u>Mark as read</u></button>
             <hr />
         </div>
     );

@@ -1,5 +1,46 @@
-.blogs-container{
+.blogs-container {
     display: grid;
     grid-template-columns: 4fr 1fr;
     gap: 20px;
+}
+
+.spent-container {
+    background: rgba(96, 71, 236, 0.1);
+    border: 1px solid #6047EC;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.spent-time {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #6047EC;
+    padding: 15px 20px;
+}
+
+.bookmark-container {
+    background: rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+}
+
+.bookmark-blogs {
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.blog-content-container{
+    background-color: rgb(28, 84, 133);
+}
+
+.blog-content {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+
 }
