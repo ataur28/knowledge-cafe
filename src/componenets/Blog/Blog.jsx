@@ -5,7 +5,7 @@ import './Blog.css'
 
 const Blog = (props) => {
     // console.log(props);
-    const { authorName, authorPicture, blogTitle, coverPicture, publishDate, readTime, topic
+    const {id, authorName, authorPicture, blogTitle, coverPicture, publishDate, readTime, topic
     } = props.blog;
     const handleAddBlogs = props.handleAddBlogs;
     const handleAddBlogsTime = props.handleAddBlogsTime;
