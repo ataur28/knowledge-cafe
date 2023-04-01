@@ -7,6 +7,7 @@ const Content = () => {
     const [blogs, setBlogs] = useState([]);
     const [content, setContent] = useState([]);
     const [time, setTime] = useState([]);
+    const [updateTime, setUpdateTime] = useState([]);
 
     useEffect(() => {
         fetch('knowledge.json')
@@ -15,7 +16,7 @@ const Content = () => {
     }, []);
 
     const handleAddBlogs = (blog) => {
-         console.log(blog.blogTitle)
+        console.log(blog.blogTitle)
         const newContent = [...content,blog.blogTitle];
         // const newContent = [...Content,blog];
         setContent(newContent);
@@ -23,8 +24,37 @@ const Content = () => {
 
     }
 
-    const handleAddBlogsTime = () => {
-        console.log('time')
+    // const handleAddBlogsTime = (blog) => {
+    //     console.log(blog.readTime)
+    //     const newTime = [...time,blog.readTime];
+    //     console.log(newTime);
+    //     setTime(newTime);
+    //     console.log(newTime);
+    //     let sum = 0;
+    //     // for (const time of newTime){
+    //     //     sum = sum + time;
+    //     // }
+    //     const sumTime = newTime.map(time => sum = sum+time);
+    //     console.log(sumTime);
+    //     // for (const time of newTime){
+    //     //     sum = sum + time;
+    //     //     // console.log(time);
+        
+    //     // }
+        
+    // }
+
+    const handleAddBlogsTime = (blog) =>{
+        console.log(blog.readTime);
+        let total = 0;
+        const newTime = [...time,blog.readTime];
+        setTime(newTime);
+        for (const time of newTime){
+            total = total + time;
+        }
+        console.log(total);
+        setUpdateTime(total);
+        
     }
 
     return (
@@ -41,7 +71,7 @@ const Content = () => {
             </div>
             <div className='cart-container'>
                 <div className='spent-container'>
-                    <h3 className='spent-time'>Spent time on read: {content.length} </h3>
+                    <h3 className='spent-time'>Spent time on read: {updateTime} </h3>
                 </div>
                 <div className='bookmark-container'>
                     <div className='bookmark-blogs'>
