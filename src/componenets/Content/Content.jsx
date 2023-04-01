@@ -8,6 +8,7 @@ const Content = () => {
     const [content, setContent] = useState([]);
     const [time, setTime] = useState([]);
     const [updateTime, setUpdateTime] = useState([]);
+    const [updateContent, setUpdateContent] = useState([]);
 
     useEffect(() => {
         fetch('knowledge.json')
@@ -16,33 +17,22 @@ const Content = () => {
     }, []);
 
     const handleAddBlogs = (blog) => {
-        console.log(blog.blogTitle)
+        // console.log(blog.blogTitle)
         const newContent = [...content,blog.blogTitle];
         // const newContent = [...Content,blog];
         setContent(newContent);
-        console.log(newContent);
+        // newContent.join('\n')
+        // setUpdateContent(newContent.join('\n'))
+        // console.log(newContent.join('\n'));
+        const updateBlogTitle = newContent.map((title) => <div className='content-title'>{title}</div>);
+
+        setUpdateContent(updateBlogTitle);
+
+        console.log(updateBlogTitle);
 
     }
 
-    // const handleAddBlogsTime = (blog) => {
-    //     console.log(blog.readTime)
-    //     const newTime = [...time,blog.readTime];
-    //     console.log(newTime);
-    //     setTime(newTime);
-    //     console.log(newTime);
-    //     let sum = 0;
-    //     // for (const time of newTime){
-    //     //     sum = sum + time;
-    //     // }
-    //     const sumTime = newTime.map(time => sum = sum+time);
-    //     console.log(sumTime);
-    //     // for (const time of newTime){
-    //     //     sum = sum + time;
-    //     //     // console.log(time);
-        
-    //     // }
-        
-    // }
+    
 
     const handleAddBlogsTime = (blog) =>{
         console.log(blog.readTime);
@@ -77,7 +67,9 @@ const Content = () => {
                     <div className='bookmark-blogs'>
                         <h3>Bookmarked Blogs : {content.length} </h3>   
                         
-                        <p className='blog-content'>{content}<br /><br /></p>
+                        <p className='blog-content'>{
+                        updateContent
+                        }<br /><br /></p>
                         
                     </div>
                     
