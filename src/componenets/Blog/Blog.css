@@ -1,34 +1,81 @@
-.cover-image{
+.cover-image {
     width: 100%;
     height: 450px;
     border-radius: 8px;
+    margin-top: 40px;
 }
 
-.blog-author-container{
+.blog-author-container {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: c;
 }
 
-.author-container{
+.author-container {
     display: flex;
     align-items: center;
     gap: 10px;
 
 }
 
-.author-image{
+.author-image {
     width: 60px;
     height: 60px;
     border-radius: 50%;
 }
 
-.author-name{
+.author-name {
     margin: 10px 0px;
     padding: 0px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #111111;
 }
 
-.publishing-date{
+.publishing-date {
     margin: 0;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.read-time {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.blog-title {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #111111;
+}
+
+.blog-topic-tag {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.mark-as-read {
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #6047EC;
+}
+
+hr{
+    margin-top: 30px;
 }

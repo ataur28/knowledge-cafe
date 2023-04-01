@@ -6,7 +6,8 @@
     "authorPicture": "https://img.freepik.com/premium-photo/young-handsome-businessman-looking-proud-arrogant-happy-surprised-satisfied-pointing-self-feeling-like-winner_1194-29999.jpg?w=1380",
     "coverPicture": "https://img.freepik.com/free-photo/programming-background-collage_23-2149901770.jpg?w=1060&t=st=1680294546~exp=1680295146~hmac=32a2197f22e7e05c799f7ad4ad0809bedcaabec73822d73c47af22d7c3ffd6e3",
     "readTime": 6,
-    "publishDate": "Mar 14 (4 days ago)"
+    "publishDate": "Mar 14 (4 days ago)",
+    "topic": "#beginners #JS #HTML #CSS"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "authorPicture": "https://img.freepik.com/premium-photo/young-handsome-businessman-looking-astonished-disbelief-pointing-object-side-saying-wow-unbelievable_1194-34069.jpg?w=1380",
     "coverPicture": "https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148819604.jpg?w=1380&t=st=1680293972~exp=1680294572~hmac=63e3d4175e13ec2eec34ff023c92b1aa52b120cf04188f8c2ec956db229695b8",
     "readTime": 9,
-    "publishDate": "Mar 15 (4 days ago)"
+    "publishDate": "Mar 15 (4 days ago)",
+    "topic": "#beginners #programming #HTML #CSS"
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "authorPicture": "https://img.freepik.com/free-photo/teenager-girl-styding-home_144627-18510.jpg?w=1380&t=st=1680294246~exp=1680294846~hmac=fe32d2b0e46c09ef127f1adcb46074ae868f00bc40f227b3f00fa9eaaf850e00",
     "coverPicture": "https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=1060&t=st=1680293774~exp=1680294374~hmac=bd1862a256f7a168ae6af130f46ca9d2ea3e9ad2e921aa139a9d11cdb7e1b398",
     "readTime": 8,
-    "publishDate": "Mar 13 (5 days ago)"
+    "publishDate": "Mar 13 (5 days ago)",
+    "topic": "#beginners #programming"
   },
   {
     "id": 4,
@@ -33,6 +36,7 @@
     "authorPicture": "https://img.freepik.com/free-photo/photographer-using-mobile-phone_23-2148019150.jpg?w=1380&t=st=1680294365~exp=1680294965~hmac=8191c9402b9e0b9cecfaed9cdc970f0e56a25e38d5156d8f8bffe2a8bee4431f",
     "coverPicture": "https://img.freepik.com/premium-photo/technical-financial-graph-technology-abstract-background_34663-3.jpg?w=1380",
     "readTime": 5,
-    "publishDate": "Mar 12 (2 days ago)"
+    "publishDate": "Mar 12 (2 days ago)",
+    "topic": "#beginners #programming #MongoDB"
   }
 ]

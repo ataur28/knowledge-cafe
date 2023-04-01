@@ -1,9 +1,11 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBookmark, faCoffee } from '@fortawesome/free-solid-svg-icons'
 import './Blog.css'
 
 const Blog = (props) => {
     // console.log(props.blog);
-    const { authorName, authorPicture, blogTitle, coverPicture, publishDate, readTime
+    const { authorName, authorPicture, blogTitle, coverPicture, publishDate, readTime, topic
     } = props.blog;
 
     return (
@@ -18,10 +20,14 @@ const Blog = (props) => {
                     </div>
                 </div>
                 <div className='read-time'>
-                    <p>{readTime} min read</p>
+                    <p>{readTime} min read <button><FontAwesomeIcon icon={faBookmark} /></button></p>
 
                 </div>
             </div>
+            <h2 className='blog-title'>{blogTitle}</h2>
+            <p className="blog-topic-tag">{topic}</p>
+            <button className='mark-as-read'><u>Mark as read</u></button>
+            <hr />
         </div>
     );
 };
