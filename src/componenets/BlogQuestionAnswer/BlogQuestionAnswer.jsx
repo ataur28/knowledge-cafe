@@ -4,6 +4,7 @@ import './BlogQuestionAnswer.css'
 const BlogQuestionAnswer = () => {
     return (
         <div>
+            <h2>Blog Question Answer Section</h2>
             <div>
                 <h3>Question-1: Props vs state</h3>
                 <p>Props:</p>
