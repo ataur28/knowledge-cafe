@@ -17,25 +17,22 @@ const Content = () => {
     }, []);
 
     const handleAddBlogs = (blog) => {
-        // console.log(blog.blogTitle)
         const newContent = [...content,blog.blogTitle];
-        // const newContent = [...Content,blog];
         setContent(newContent);
-        // newContent.join('\n')
-        // setUpdateContent(newContent.join('\n'))
-        // console.log(newContent.join('\n'));
         const updateBlogTitle = newContent.map((title) => <div className='content-title'>{title}</div>);
 
         setUpdateContent(updateBlogTitle);
 
-        console.log(updateBlogTitle);
+        // console.log(updateBlogTitle);
+
+
 
     }
 
     
 
     const handleAddBlogsTime = (blog) =>{
-        console.log(blog.readTime);
+        // console.log(blog.readTime);
         let total = 0;
         const newTime = [...time,blog.readTime];
         setTime(newTime);
@@ -61,7 +58,7 @@ const Content = () => {
             </div>
             <div className='cart-container'>
                 <div className='spent-container'>
-                    <h3 className='spent-time'>Spent time on read: {updateTime} </h3>
+                    <h3 className='spent-time'>Spent time on read: {updateTime} min </h3>
                 </div>
                 <div className='bookmark-container'>
                     <div className='bookmark-blogs'>
